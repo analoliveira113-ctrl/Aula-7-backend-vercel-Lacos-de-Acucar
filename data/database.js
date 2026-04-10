@@ -15,12 +15,11 @@
 // ─── Tabela de Categorias ─────────────────────────────────────
 // Cada categoria agrupa produtos relacionados no cardápio.
 let categorias = [
-    { nome: "Sorvetes" },
-    { nome: "Milkshakes" },
-    { nome: "Picolés" },
-    { nome: "Açaís" },
-    { nome: "Extras" }
-
+    { id: 1, nome: "Sorvetes" },
+    { id: 2, nome: "Milkshakes" },
+    { id: 3, nome: "Extras" },
+    { id: 4, nome: "Picolés" },
+    { id: 5, nome: "Açaís" }
 ];
 
 // ─── Tabela de Produtos ───────────────────────────────────────
