@@ -92,12 +92,14 @@ app.get('/', (req, res) => {
 // Importamos os arquivos de rota da pasta /routes
 const rotasCategorias = require('./routes/categorias');
 const rotasProdutos = require('./routes/produtos');
+const rotasPedidos = require('./routes/pedidos');
 
 // app.use('prefixo', router) registra o router com um prefixo de URL.
 // Toda rota definida dentro de categorias.js ficará em /api/categorias/...
 // Toda rota definida dentro de produtos.js ficará em /api/produtos/...
 app.use('/api/categorias', rotasCategorias);
 app.use('/api/produtos', rotasProdutos);
+app.use('/api/pedidos', rotasPedidos);
 
 
 // =============================================================
@@ -148,6 +150,8 @@ app.listen(PORTA, () => {
     console.log(`   POST   /api/produtos`);
     console.log(`   PUT    /api/produtos/:id`);
     console.log(`   DELETE /api/produtos/:id`);
+    console.log(`   GET    /api/pedidos`);
+    console.log(`   POST    /api/pedidos`);
     console.log('');
     console.log('💣 Rota de teste de erro:');
     console.log(`   GET    /api/produtos/erro-teste`);
